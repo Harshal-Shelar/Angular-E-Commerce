@@ -15,6 +15,9 @@ import { SellerAddProductComponent } from './components/seller-add-product/selle
 import { SellerAuthComponent } from './components/seller-auth/seller-auth.component';
 import { SellerHomeComponent } from './components/seller-home/seller-home.component';
 import { SellerUpdateProductComponent } from './components/seller-update-product/seller-update-product.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+import { UserAuthComponent } from './components/user-auth/user-auth.component';
 
 @NgModule({
   declarations: [
@@ -30,11 +33,14 @@ import { SellerUpdateProductComponent } from './components/seller-update-product
     SellerAddProductComponent,
     SellerAuthComponent,
     SellerHomeComponent,
-    SellerUpdateProductComponent
+    SellerUpdateProductComponent,
+    UserAuthComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
